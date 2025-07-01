@@ -43,7 +43,7 @@
 
            {{-- Hours Summary Report (Admin only) --}}
 <li class="nav-item {{ request()->is('employee/hours-summary') ? 'active' : '' }}">
-    <a href="{{ route('admin.admin.employee.report') }}" class="nav-link">
+    <a href="{{ route('admin.employee.report') }}" class="nav-link">
         <i class="fas fa-clock me-2"></i> Hours Summary Report
     </a>
 </li>

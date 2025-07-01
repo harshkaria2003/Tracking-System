@@ -7,7 +7,7 @@
     <h2 class="mb-4 text-center fw-bold">📊 Employee Work Hours Report</h2>
 
     {{-- Filter Form --}}
-    <form method="GET" action="{{ route('admin.admin.employee.report') }}" class="mb-4">
+    <form method="GET" action="{{route('admin.employee.report')}}" class="mb-4">
         <div class="row g-3 align-items-end justify-content-center">
             <div class="col-md-3 text-md-end">
                 <label for="date_range" class="form-label">Select Date Range:</label>

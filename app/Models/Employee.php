@@ -39,10 +39,16 @@ class Employee extends Model
         return $this->belongsTo(Project::class);
     }
 
-    public function timeLogs()
-    {
-        return $this->hasMany(TimeLog::class, 'employee_id');
-    }
+   
+public function user()
+{
+    return $this->belongsTo(\App\Models\User::class);
+}
+
+public function timeLogs()
+{
+    return $this->hasMany(\App\Models\TimeLog::class);
+}
 
    
     public function getActivitylogOptions(): LogOptions
@@ -53,4 +59,5 @@ class Employee extends Model
             ->logOnlyDirty()
             ->dontSubmitEmptyLogs();
     }
+    
 }
